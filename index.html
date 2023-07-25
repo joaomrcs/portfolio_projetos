@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>John's Portfolio</title>
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap Icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css"
+    />
+    <!-- Animate CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <!-- SplideJs Styles -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.2.1/dist/css/splide.min.css"
+    />
+    <!-- App Styles -->
+    <link rel="stylesheet" href="styles/app.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="animate__animated animate__slideInDown">
+        <div class="container">
+          <nav class="navigation">
+            <ul>
+              <li><a href="#portfolio">Portfólio</a></li>
+              <li><a href="#about">Sobre mim</a></li>
+              <li><a href="#skills">Habilidades</a></li>
+            </ul>
+            <a class="btn btn--main" href="assets/resume.pdf" download
+              ><i class="bi bi-download"></i> Resume</a
+            >
+          </nav>
+
+          <h1 class="header__logo">
+            <a href="/">
+              <span>João</span>
+              <span>Marcos</span>
+            </a>
+          </h1>
+
+          <div class="header__contact">
+            <a href="mailto:hello@jianyang.com">srjoau@gmail.com</a>
+            <a class="btn btn--light" href="assets/resume.pdf" download>
+              <i class="bi bi-download"></i> CV
+            </a>
+          </div>
+
+          <div class="header__mobile">
+            <button id="navigation-button">
+              <i class="bi bi-list"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero__wrapper">
+          <div class="hero__img">
+            <img src="assets/profile.jpeg" alt="Profile Picture" />
+          </div>
+          <h1 class="hero__title animate__animated animate__slideInUp">
+            Seja bem-vindo ao meu portfólio<br />
+            de Ciência de dados.
+          </h1>
+          <p class="hero__content animate__animated animate__slideInUp">
+            Nesta página, eu demonstro minhas habilidades de resolver problemas
+            de negócio utilizando conceitos e ferramentas de Ciência de dados,
+            através de projetos com dados públicos.
+          </p>
+          <div class="footer__social"></div>
+          <ul class="social animate__animated animate__slideInLeft">
+            <li>
+              <a href="#"><i class="bi bi-linkedin"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="bi bi-github"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="section animate__animated animate__slideInUp" id="portfolio">
+      <div class="container">
+        <div class="section__header section__header">
+          <h2 class="section__title">Portfólio</h2>
+          <p class="section__subtitle">Projetos mais recentes</p>
+        </div>
+        <div class="portfolio">
+          <div class="portfolio__box">
+            <img class="portfolio__img" src="assets/project1.webp" alt="Portfolio Items" />
+            <div class="portfolio__info">
+              <h3 class="portfolio__title">Drugstore Sales Prediction</h3>
+              <p class="portfolio__content">
+                O objetivo do CEO da Rossmann é reestruturar todas as unidades de negócio da empresa. 
+                Para alcançar essa meta, ele busca obter uma projeção precisa do faturamento de todas 
+                as lojas ao longo das próximas seis semanas.
+              </p>
+              <a class="portfolio__link" href="https://github.com/joaomrcs/rossmann_sales_pred/blob/main/rossmann_sales_pred.ipynb" target="_blank">
+                <i class="bi bi-arrow-up-right-circle-fill"></i>
+              </a>
+            </div>
+          </div>
+          <div class="portfolio__box">
+            <img class="portfolio__img" src="assets/project2.jpg" alt="Portfolio Items" />
+            <div class="portfolio__info">
+              <h3 class="portfolio__title">Loyalty Program Creation</h3>
+              <p class="portfolio__content">
+                A equipe de negócios solicitou aos cientistas de dados que procedessem com a seleção 
+                dos clientes mais estratégicos para a empresa. Para tal, foram consideradas as 
+                características fundamentais de recência, frequência e aspectos monetários, que seriam 
+                utilizadas para a avaliação e segmentação dos clientes em clusters.
+              </p>
+              <a class="portfolio__link" href="https://github.com/joaomrcs/loyalty_program_creation/blob/main/clustering_c9_deploy.ipynb" target="_blank">
+                <i class="bi bi-arrow-up-right-circle-fill"></i>
+              </a>
+            </div>
+          </div>
+          <div class="portfolio__box">
+            <img class="portfolio__img" src="assets/project3.jpeg" alt="Portfolio Items" />
+            <div class="portfolio__info">
+              <h3 class="portfolio__title">Curry company dashboard's</h3>
+              <p class="portfolio__content">
+                Mergulhando na era da modernidade, o restaurante abraçou a tecnologia para impulsionar 
+                seus resultados. Com maestria, foram criados dashboards dinâmicos através da 
+                plataforma Streamlit, criando uma experiência visual única para o acompanhamento de métricas
+                dos restaurantes e entregadores.
+              </p>
+              <a class="portfolio__link" href="https://joaomarcs-curry-company.streamlit.app/" target="_blank">
+                <i class="bi bi-arrow-up-right-circle-fill"></i>
+              </a>
+            </div>
+          </div>
+          <div class="portfolio__box">
+            <img class="portfolio__img" src="assets/project4.jpg" alt="Portfolio Items" />
+            <div class="portfolio__info">
+              <h3 class="portfolio__title">Under Construction</h3>
+              <p class="portfolio__content">
+                O projeto de ciência de dados está como um laboratório em ebulição, com ideias 
+                fervilhantes e descobertas promissoras a serem reveladas em breve. 🧪🔬🚀
+              </p>
+              <a class="portfolio__link" href="#">
+                <i class="bi bi-arrow-up-right-circle-fill"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="section__footer">
+          <a href="#contact">
+            Mais projetos
+            <i class="bi bi-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section__header">
+          <h2 class="section__title">Sobre mim</h2>
+          <p class="section__subtitle">Apresentação</p>
+        </div>
+        <div class="about">
+          <h4 class="about__intro">👋 Olá, me chamo João Marcos!</h4>
+          <p class="about__bio">
+            Graduado em Análise e Desenvolvimento de Sistemas, desempenhei como Analista de Dados no mercado 
+            financeiro. Realizando análises e interpretação de dados, produzindo relatórios para a 
+            área comercial. Além disso, estou envolvido em projetos pessoais de Ciência de Dados 
+            para aprimorar minhas habilidades na resolução de problemas de negócios e no uso de 
+            ferramentas de análise de dados. Busco constantemente me aperfeiçoar nessa área 
+            estratégica, contribuindo para o crescimento dos projetos relacionados à Ciência de Dados.
+          </p>
+          <br>
+        </div>
+      </div>
+    </section>
+
+    <!--Skills Sction-->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section__header">
+          <h2 class="section__title">Habilidades</h2>
+          <p class="section__subtitle">Detalhes</p>
+        </div>
+        <div class="about">
+          <h4 class="about__intro">🛠️ Ferramentas e tecnologias</h4>
+          <br>
+          <br>
+          <h4 class="about__skillsTitle">Linguagens de Programação e Banco de Dados</h4>
+          <ul>
+          <!--<ul class="about__skillsList"> -->
+            <li>Python com foco em análise de dados.</li>
+            <li>Web scraping com Python.</li>
+            <li>SQL para extração de dados.</li>
+            <li>Banco de Dados: SQLite, MySQL, Oracle, e MongoDB.</li>
+          </ul>
+          <br>
+          <br>
+          <h4 class="about__skillsTitle">Estatística e Machine Learning</h4>
+          <ul>
+            <li>Estatística descritiva (localização, dispersão, assimetria, kurtosis, densidade).</li>
+            <li>Algoritmos de regressão, classificação e clusterização.</li>
+            <li>Métricas de performance dos algoritmos (RMSE, MAE, MAPE, Confusion Matrix,
+              Precisão, Recall, Curva ROC, Curva Lift, AUC, Silhouette Score e DB-Index).</li>
+            <li>Bibliotecas de Machine Learning: Sklearn e Scipy.</li>
+          </ul>
+          <br>
+          <br>
+          <h4 class="about__skillsTitle">Visualização de Dados</h4>
+          <ul>
+            <li>Matplotlib, Seaborn e Plotly.</li>
+            <li>Power BI, Tableau e Streamlit.</li>
+          </ul>
+          <br>
+          <br>
+          <h4 class="about__skillsTitle">Engenharia de Software</h4>
+          <ul>
+            <li>Git, Github, Gitlab, Virtual Environment e Docker.</li>
+            <li>Flask.</li>
+            <li>Cloud: Microsoft Azure.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="container">
+      <div class="section" id="testimonials">
+        <div class="section__header section__header--center">
+          <h2 class="section__title">Experiências profissionais </h2>
+          <p class="section__subtitle">Principais</p>
+        </div>
+        <div class="testimonials">
+          <div class="splide">
+            <div class="splide__track">
+              <div class="splide__list">
+                <div class="testimonials__box splide__slide">
+                  <span class="testimonials__sign">
+                    <i class="bi bi-chat-square-quote"></i>
+                  </span>
+                  <p class="testimonials__quotes">
+                    Construção de soluções de dados para problemas de negócio, próximos dos desafios
+                    reais das empresas, utilizando dados públicos de competições de Ciência de Dados,
+                    onde eu abordei o problema desde a concepção do desafio de negócio até a
+                    publicação do algoritmo treinado em produção, utilizando ferramentas de Cloud
+                    Computing.
+                  </p>
+                  <div class="testimonials__author">
+                    <div class="testimonials__authorInfo">
+                      <h4>3+ projetos</h4>
+                      <p>Direcionados para Ciência de dados</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="testimonials__box splide__slide">
+                  <span class="testimonials__sign">
+                    <i class="bi bi-chat-square-quote"></i>
+                  </span>
+                  <p class="testimonials__quotes">
+                    Quem sabe iniciar como DataOps JR na SPRO IT Solutions? rs
+                  </p>
+                  <div class="testimonials__author">
+                    <div class="testimonials__authorInfo">
+                      <h4>Próximo job</h4>
+                      <p>...</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="testimonials__box splide__slide">
+                  <span class="testimonials__sign">
+                    <i class="bi bi-chat-square-quote"></i>
+                  </span>
+                  <p class="testimonials__quotes">
+                    Profissional responsável pelos dados na área comercial do Banco Carrefour,
+                    realizando a extração de dados via MicroStrategy para atualização das bases de dados, 
+                    query's diárias em SQL para obter informações específicas solicitadas pelo time de parcerias,
+                    report's semanais/mensais para a diretoria e criação de dashboard's utilizando
+                    o Power BI.
+                  </p>
+                  <div class="testimonials__author">
+                    <div class="testimonials__authorInfo">
+                      <h4>1+ Ano</h4>
+                      <p>Analista de dados</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+<br>
+<br>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__copyright">
+          <p>Made with &hearts; by <a href="/">devfolio.io</a></p>
+        </div>
+        <div class="footer__social">
+          <ul class="social">
+            <li>
+              <a href="https://www.linkedin.com/in/joaomrcs/" target="_blank"><i class="bi bi-linkedin"></i></a>
+            </li>
+            <li>
+              <a href="https://github.com/joaomrcs" target="_blank"><i class="bi bi-github"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <!-- SplideJs v3 -->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.2.1/dist/js/splide.min.js"></script>
+    <!-- Scroll Reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- App Scripts -->
+    <script src="scripts/app.js"></script>
+  </body>
+</html>
